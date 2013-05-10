@@ -14,23 +14,42 @@
 
 <script type="text/javascript"><!--
 document.observe("dom:loaded", function() {
-
     var ktm = new Bike(
         Object
-        .combine(Elements.head118)
-        .combine(Elements.wheel29er)
-        .combine(Elements.forkSurlyOgre)
-        .combine(Elements.crankSuntour)
-        .combine(Bikes.ktm_lc_w51)
+        .combine(Definitions.head118)
+        .combine(Definitions.wheel29er)
+        .combine(Definitions.forkSurlyOgre)
+        .combine(Definitions.crankSuntour)
+        .combine(Definitions.ktm_lc_w51)
     );
-    var cobalt2 = new Bike(
+    var cobia = new Bike(
         Object
-        .combine(Elements.head118)
-        .combine(Elements.wheel29er)
-        .combine(Elements.crankSuntour)
-        .combine(Bikes.cobalt_2wS)
-        .combine(Elements.forkSurlyOgre)
+        .combine(Definitions.head118)
+        .combine(Definitions.wheel29er)
+        .combine(Definitions.crankSuntour)
+        .combine(Definitions.cobia_29er_race)
+    , ktm, 'bb');
+/*
+    var cobalt2 = new CalculatorClass(
+        Object
+        .combine(Definitions.head118)
+        .combine(Definitions.wheel29er)
+        .combine(Definitions.crankSuntour)
+        .combine(Definitions.cobalt_2wS)
+        .combine(Definitions.forkSurlyOgre)
     , ktm, 'rear');
+*/
+
+/*
+    var ktm = new Bike(
+        Object
+        .combine(Definitions.head118)
+        .combine(Definitions.wheel29er)
+        .combine(Definitions.forkSurlyOgre)
+        .combine(Definitions.crankSuntour)
+        .combine(Definitions.ktm_lc_w51)
+    );
+*/
 
 });
 //--></script>
