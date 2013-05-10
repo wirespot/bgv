@@ -9,6 +9,7 @@
 
 <script type="text/javascript" src="lib/definitions.js"></script>
 <script type="text/javascript" src="lib/common.js"></script>
+<script type="text/javascript" src="lib/parts.js"></script>
 <script type="text/javascript" src="lib/bike.js"></script>
 
 
@@ -22,6 +23,7 @@ document.observe("dom:loaded", function() {
         .combine(Definitions.crankSuntour)
         .combine(Definitions.ktm_lc_w51)
     );
+/*
     var cobia = new Bike(
         Object
         .combine(Definitions.head118)
@@ -29,27 +31,15 @@ document.observe("dom:loaded", function() {
         .combine(Definitions.crankSuntour)
         .combine(Definitions.cobia_29er_race)
     , ktm, 'bb');
-/*
-    var cobalt2 = new CalculatorClass(
+*/
+    var cobalt2 = new Bike(
         Object
         .combine(Definitions.head118)
         .combine(Definitions.wheel29er)
         .combine(Definitions.crankSuntour)
         .combine(Definitions.cobalt_2wS)
-        .combine(Definitions.forkSurlyOgre)
-    , ktm, 'rear');
-*/
-
-/*
-    var ktm = new Bike(
-        Object
-        .combine(Definitions.head118)
-        .combine(Definitions.wheel29er)
-        .combine(Definitions.forkSurlyOgre)
-        .combine(Definitions.crankSuntour)
-        .combine(Definitions.ktm_lc_w51)
-    );
-*/
+                .combine(Definitions.forkSurlyOgre)
+    , ktm, 'bb');
 
 });
 //--></script>
