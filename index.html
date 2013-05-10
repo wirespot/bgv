@@ -1,12 +1,38 @@
 <html><head>
     <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
     <title>Geometry visualiser</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
 </head><body>
 
-<canvas id="canvas" width="1200" height="700"></canvas>
+<canvas id="canvas" width="1100" height="700"></canvas>
+
+<script type="text/javascript" src="definitions.js"></script>
+<script type="text/javascript" src="lib.js"></script>
+
+
+<script type="text/javascript"><!--
+document.observe("dom:loaded", function() {
+
+    var ktm = new Bike(
+        Object
+        .combine(Elements.head118)
+        .combine(Elements.wheel29er)
+        .combine(Elements.forkSurlyOgre)
+        .combine(Elements.crankSuntour)
+        .combine(Bikes.ktm_lc_w51)
+    );
+    var cobalt2 = new Bike(
+        Object
+        .combine(Elements.head118)
+        .combine(Elements.wheel29er)
+        .combine(Elements.crankSuntour)
+        .combine(Bikes.cobalt_2wS)
+        .combine(Elements.forkSurlyOgre)
+    , ktm, 'rear');
+
+});
+//--></script>
 
 </body>
 </html>
