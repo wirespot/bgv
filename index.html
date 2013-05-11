@@ -12,6 +12,18 @@
 <script type="text/javascript" src="lib/parts.js"></script>
 <script type="text/javascript" src="lib/bike.js"></script>
 
+<!--
+TODO:
+* find head by seat angle + TTL
+* draw seat tube, seat post, saddle
+* Logger object, print to scrollable textarea instead of console
+* single bike diagnostics:
+    toe overlap
+    seat tube tire clearance
+    front crown tire clearance
+* relative bike diagnostics:
+    compare delta at alignment reference spot
+-->
 
 <script type="text/javascript"><!--
 document.observe("dom:loaded", function() {
@@ -30,7 +42,7 @@ document.observe("dom:loaded", function() {
         .combine(Definitions.wheel29er)
         .combine(Definitions.crankSuntour)
         .combine(Definitions.cobia_29er_race)
-    , ktm, 'rear');
+    , ktm, 'bb');
 
     var spec = new Bike(
         Object
@@ -38,7 +50,7 @@ document.observe("dom:loaded", function() {
         .combine(Definitions.wheel29er)
         .combine(Definitions.crankSuntour)
         .combine(Definitions.specialized_hsd29)
-    , ktm, 'rear');
+    , ktm, 'bb');
 
     var cobalt2 = new Bike(
         Object
@@ -46,7 +58,7 @@ document.observe("dom:loaded", function() {
         .combine(Definitions.wheel29er)
         .combine(Definitions.crankSuntour)
         .combine(Definitions.cobalt_2wM)
-    , ktm, 'rear');
+    , ktm, 'bb');
 
 });
 //--></script>
