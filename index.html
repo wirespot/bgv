@@ -1,49 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
     <title>Bicycle Geometry Visualiser by wirespot</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+
   <body>
-    <div class="wrapper">
+    <a id="forkme_banner" href="https://github.com/wirespot/bgv">View on GitHub</a>
+    <div class="shell">
+
       <header>
-        <h1>Bicycle Geometry Visualiser</h1>
-        <p>Visualise and compare bicycle geometries.</p>
-
-        <p class="view"><a href="https://github.com/wirespot/bgv">View the Project on GitHub <small>wirespot/bgv</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/wirespot/bgv/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/wirespot/bgv/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/wirespot/bgv">View On <strong>GitHub</strong></a></li>
-        </ul>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Bicycle Geometry Visualiser</h1>
+            <h2>Visualise and compare bicycle geometries.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
       </header>
-      <section>
-        <p><strong>Bicycle Geometry Visualiser (BGV)</strong> is a tool that allows you to define the geometry of one or more bicycles, see them rendered graphically on a HTML5 Canvas and perform visual comparisons by aligning several bicycles over each other. This can help you choose or compare frames and bicycle models.</p>
 
-<p>For now BGV lacks a user interface and you will need to edit JavaScript files to make use of it. Features planned in the future include bicycle vs cyclist diagnostics.</p>
-
-<p>To use BGV, checkout the code and load index.html in a recent web browser (only tested with Firefox). Bicycle and parts definitions are in lib/definitions.js and you can control the rendering from lib/control.js.</p>
-
-<p>Feedback is welcome. Please keep in mind that this is a very young project and the author's spare time is limited.</p>
-
-<p>BGV is licensed under GPL v3.</p>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/wirespot/bgv/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/wirespot/bgv/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
       </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p><strong>Bicycle Geometry Visualiser (BGV)</strong> is a tool that allows you to define the geometry of one or more bicycles, see them rendered graphically on an HTML5 Canvas and perform visual comparisons by aligning several bicycles over each other. This can help you choose or compare frames and bicycle models.</p>
+
+<p><strong>For now BGV lacks a user interface</strong> and you will need to edit JavaScript files to make use of it. A user-friendly graphical interface is planned, but other features come first.</p>
+
+<p><strong>To use BGV</strong>, checkout the code and load <em>index.html</em> in a recent web browser (only tested with Firefox). Bicycle and parts definitions are in <em>lib/definitions.js</em> and you can control the rendering from <em>lib/control.js</em>.</p>
+
+<p><strong>Feedback is welcome.</strong> Please keep in mind that this is a very young project and the author's spare time is limited.</p>
+
+<p><strong>Feel free to hack on it</strong> and reuse the code (BGV is licensed under GPL v3), I am hoping that some of the graphical and trigonometrical libraries can be useful to others as well.</p>
+
+<p><strong>Here are some examples</strong> of what you can do with it:
+<img src="https://raw.github.com/wirespot/wirespot.github.io/master/images/road.png" alt="Example rendering of a road bike."></p>
+      </section>
+
       <footer>
-        <p>This project is maintained by <a href="https://github.com/wirespot">wirespot</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/wirespot">wirespot</a> can be found on <a href="https://github.com/wirespot/bgv">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
   </body>
 </html>
