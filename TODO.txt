@@ -1,0 +1,37 @@
+FLEXIBLE RENDERING
+?? function that translates point from canvas system to system relative to bb
+!! function that translates point from rel to bb to canvas
+    using a certain bb canvas placement and zoom
+!! calculators conversion
+    !! bb becomes [0, 0]
+    !! change all calculators to produce values relative to bb
+        ** Util functions should still work, since axes and angles retain
+            their signs in the bb-relative system of coordinates
+        ?? stop rounding everything to int
+        ** stop applying zoom
+!! renderers conversion
+    !! canvas coords are found using a reference point and a zoom value
+    ?? round floats to int before rendering
+!! correctors conversion
+    !! stop using zoom undo
+!! labels conversion
+    !! canvas coords are found using a reference point and a zoom value
+
+GENERAL
+* draw seat post, saddle
+* add standover def and attempt to draw the real top tube
+? draw real down tube
+* Logger object, print to scrollable textarea instead of console
+* ability to check if wheels level without fixing it
+* define stack x reach spot and draw them from that spot, so tilt on leveling becomes noticeable
+* how to deal with stuff that depends on horizontal/vertical after a leveling tilt
+    (stack, reach, top tube, seat and head angles, wheelbase)
+    FIXME: forkTrailSpot is moving after tilt, shouldn't have to
+* single bike diagnostics:
+    report def params that were not originally available but were computed
+    toe overlap
+    seat tube tire clearance
+    front crown tire clearance
+    bb height
+* relative bike diagnostics:
+    compare delta at alignment reference spot
